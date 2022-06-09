@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Explorenation</title>
 
 
     <link rel="stylesheet"  href="/resources/css/style.css">
@@ -37,7 +37,7 @@
                     <li><a href="/">Acasă</a></li>
                     <!-- <li><a href="/despre/">Despre noi</a></li> -->
                     <li><a href="/destinatii/">Destinatii</a></li>
-                    <!-- <li><a href="/contact/">Contact</a></li> -->
+                    <!-- <li><a href="/contact/">Contact</Ssa></li> -->
                     <!-- <li><a href="/login/">Intră în cont</a></li> -->
                 </ul>
             </nav>
@@ -167,7 +167,7 @@
                 <hr>
                 <div>
                     <div>
-                        <form action="" method="post" id="search-engine-form">
+                        <form method="post" id="search-engine-form">
                             <div id="search-engine-container">
                                 <input type="text" id="search-engine-input" placeholder="Caută destinația dorită" list="destinationsList">
                                 <button id="search-engine-button">
@@ -237,34 +237,33 @@
         
     </footer>
 
-
-</body>
-<script>
-    // document.getElementById("hero-login-button").addEventListener("click",e=>{
-    //     e.preventDefault();
-    //     window.location.href="/login";
-    // })
-
-    document.getElementById("hero-login-button").addEventListener("click",e=>{
+    <script>
+        // document.getElementById("hero-login-button").addEventListener("click",e=>{
+        //     e.preventDefault();
+        //     window.location.href="/login";
+        // })
+    
+        document.getElementById("hero-login-button").addEventListener("click",e=>{
+            e.preventDefault();
+    
+            document.getElementById("about-section").scrollIntoView({behavior: "smooth", block:"center"});
+            // console.log(document.getElementById("about-section").scrollIntoView());
+            
+        })
+    
+        const searchEngineForm = document.getElementById("search-engine-form");
+    
+        searchEngineForm.addEventListener("submit",e=>{
         e.preventDefault();
-
-        document.getElementById("about-section").scrollIntoView({behavior: "smooth", block:"center"});
-        // console.log(document.getElementById("about-section").scrollIntoView());
-        
+    
+        let searchInput = document.getElementById("search-engine-input").value;
+    
+        window.location.href = "/destinatii/?search="+searchInput;
     })
+    </script>
+    <script src="/resources/js/menu.js"></script>
+    <script src="/resources/js/scroll.js"></script>
+</body>
 
-    const searchEngineForm = document.getElementById("search-engine-form");
-
-    searchEngineForm.addEventListener("submit",e=>{
-    e.preventDefault();
-
-    let searchInput = document.getElementById("search-engine-input").value;
-
-    window.location.href = "/destinatii/?search="+searchInput;
-})
-</script>
-<script src="/resources/js/menu.js"></script>
-<script src="/resources/js/scroll.js"></script>
-<!-- <script src="resources/js/color-scheme.js"></script> -->
 
 </html>

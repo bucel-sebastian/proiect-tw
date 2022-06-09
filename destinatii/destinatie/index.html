@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Explorenation</title>
 
 
     <link rel="stylesheet"  href="/resources/css/style.css">
@@ -63,31 +63,30 @@
         
     </footer>
 
+    <script>
 
+        const urlParaeter = new URLSearchParams(window.location.search);
+        let idDestinatie=urlParaeter.get("id");
+        console.log(idDestinatie);
+        
+        fetch("/resources/js/destinatii.json").then(response=>response.json()).then(response=>{
+            let actualDestination;
+            for(i=0;i<response.length;i++){
+                if(response[i].id===idDestinatie){
+                    actualDestination=response[i];
+                }
+            }
+        
+            document.getElementById("product-img").style.backgroundImage="url(/resources/img/"+actualDestination.img+")";
+            document.getElementById("product-title").innerHTML=actualDestination.nume;
+            document.getElementById("product-desc").innerHTML=actualDestination.descriere;
+            document.getElementById("product-price").innerHTML=actualDestination.pret+" RON";
+            console.log(actualDestination);
+        })
+        </script>
+        <script src="/resources/js/menu.js"></script>
 </body>
-<script>
 
-const urlParaeter = new URLSearchParams(window.location.search);
-let idDestinatie=urlParaeter.get("id");
-console.log(idDestinatie);
-
-fetch("/resources/js/destinatii.json").then(response=>response.json()).then(response=>{
-    let actualDestination;
-    for(i=0;i<response.length;i++){
-        if(response[i].id===idDestinatie){
-            actualDestination=response[i];
-        }
-    }
-
-    document.getElementById("product-img").style.backgroundImage="url(/resources/img/"+actualDestination.img+")";
-    document.getElementById("product-title").innerHTML=actualDestination.nume;
-    document.getElementById("product-desc").innerHTML=actualDestination.descriere;
-    document.getElementById("product-price").innerHTML=actualDestination.pret+" RON";
-    console.log(actualDestination);
-})
-</script>
-<script src="/resources/js/menu.js"></script>
-<!-- <script src="/resources/js/scroll.js"></script> -->
 
 
 </html>
