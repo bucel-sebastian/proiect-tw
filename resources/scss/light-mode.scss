@@ -1,0 +1,13 @@
+$blue: #30C5FF;
+$black: #1a1a1a;
+$white: #fafafa;
+
+
+body.light-mode{
+    background-color: $white;
+    color:$black;
+}
+
+.light-mode a{
+    color:$black;
+}

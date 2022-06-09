@@ -1,0 +1,98 @@
+[
+    {
+        "id":"1",
+        "nume":"Tenerife",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"800",
+        "img":"tenerife.jpg",
+        "feature":"true"
+    },
+    {
+        "id":"2",
+        "nume":"Madagascar",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"340",
+        "img":"madagascar.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"3",
+        "nume":"Constanta",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"530",
+        "img":"constanta.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"4",
+        "nume":"Sri Lanka",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"290",
+        "img":"srilanka.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"5",
+        "nume":"Creta",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"420",
+        "img":"tenerife.jpg",
+        "feature":"true"
+    },
+    {
+        "id":"6",
+        "nume":"Cappadocia",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"360",
+        "img":"cappadocia.jpg",
+        "feature":"true"
+    },
+    {
+        "id":"7",
+        "nume":"Cairo",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"370",
+        "img":"cairo.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"8",
+        "nume":"Maldive",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"480",
+        "img":"maldive.jpg",
+        "feature":"true"
+    },
+    {
+        "id":"9",
+        "nume":"Dubai",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"520",
+        "img":"dubai.jpg",
+        "feature":"true"
+    },
+    {
+        "id":"10",
+        "nume":"Zanzibar",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"820",
+        "img":"zanzibar.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"11",
+        "nume":"Luxor",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"290",
+        "img":"luxor.jpg",
+        "feature":"false"
+    },
+    {
+        "id":"12",
+        "nume":"Malta",
+        "descriere":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit explicabo nostrum autem necessitatibus aspernatur! Fuga voluptatem iusto eveniet recusandae distinctio? Rem, quod esse minima libero nemo ratione quibusdam dolores.",
+        "pret":"320",
+        "img":"malta.jpg",
+        "feature":"true"
+    }
+]

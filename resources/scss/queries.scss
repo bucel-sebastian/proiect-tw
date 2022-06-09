@@ -1,0 +1,55 @@
+
+// Large screen
+@media only screen and (max-width: 1200px){
+
+}// Laptop
+@media only screen and (max-width: 992px){
+    #about-section{
+        // font-size: 70%;
+        height: max-content;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+// Tableta
+@media only screen and (max-width: 768px){
+#menu-mobile{
+    display: block;
+}
+#menu-desktop{
+    display: none;
+}
+#header-wrap{
+    padding: 0 10px;
+}
+
+.section{
+    padding: 0 5px;
+}
+#other-offers-list{
+    flex-direction: column;
+}
+.other-offer-container{
+    width: 100%;
+}
+#best-offer-section{
+    height: 100%;
+}
+.footer-row{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+}
+// Mobile
+@media only screen and (max-width: 600px){
+.best-offer-carousel-item{
+    width: 100%;
+    flex: 0 0 100%;
+    margin: 10px 0;
+}
+#hero-section-content{
+    padding: 200px 0 0 0;
+}
+}

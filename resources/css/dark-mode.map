@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "dark-mode.css",
+	"sources": [
+		"../scss/dark-mode.scss"
+	],
+	"sourcesContent": [
+		"$blue: #30C5FF;\r\n$black: #1a1a1a;\r\n$white: #fafafa;\r\n\r\n\r\nbody.dark-mode{\r\n    background-color: $black;\r\n    color:$white;\r\n}\r\n\r\n.dark-mode a{\r\n    color:$white;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,IAAI,AAAA,UAAU,CAAA;EACV,gBAAgB,EALZ,OAAO;EAMX,KAAK,EALD,OAAO;CAMd;;;AAED,AAAA,UAAU,CAAC,CAAC,CAAA;EACR,KAAK,EATD,OAAO;CAUd"
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+    <link rel="stylesheet"  href="/resources/css/style.css">
+    <!-- <link rel="stylesheet"  href="resources/css/dark-mode.css">
+    <link rel="stylesheet"  href="resources/css/light-mode.css"> -->
+    <link rel="stylesheet" href="/resources/css/queries.css">
+    <link rel="stylesheet" href="/resources/css/grid.css">
+
+ 
+    <!--load all Font Awesome styles -->
+    <link href="/resources/assets/fontawesome/css/all.css" rel="stylesheet">
+    <script src="/resources/js/modules.js"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <header id="header" style="background:rgba(33, 180, 108, 0.89)">
+        
+    </header>
+    <div id="mobile-navigation">
+        <div id="main-nav">
+            <nav>
+                <ul>
+                    <li><a href="/">Acasă</a></li>
+                    <!-- <li><a href="/despre/">Despre noi</a></li> -->
+                    <li><a href="/destinatii/">Destinatii</a></li>
+                    <!-- <li><a href="/contact/">Contact</a></li> -->
+                    <!-- <li><a href="/login/">Intră în cont</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="page-wrap" style="padding-top:80px">
+
+        <div class="section">
+            <div class="col section-wrap">
+                <h2>Toate destinațiile</h2>
+                <hr>
+                <div>
+                    <div>
+                        <form action="" method="post" id="search-engine-form">
+                            <div id="search-engine-container">
+                                <input type="text" id="search-engine-input" placeholder="Caută destinația dorită" list="destinationsList">
+                                <button id="search-engine-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                
+                            </div>
+                        </form>
+                        <datalist id="destinationsList">
+                                     
+                        </datalist>
+                    </div>
+                </div>
+                <div id="other-offers-list">
+                    <!-- <div class="other-offer-container">
+                        <div class="other-offer-img">
+
+                        </div>
+                        <div class="other-offer-content">
+                            <h3>'+list[index].nume+'</h3>
+                            <p>'+list[index].descriere+'</p>
+                            <div>
+                                <span>'+list[index].pret+' RON</span>
+                                <a href="/destinatii/destinatie/?id='+list[index].id+'">Află mai multe</a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="other-offer-container">
+                        <div class="other-offer-img">
+
+                        </div>
+                        <div class="other-offer-content">
+
+                        </div>    
+                    </div>
+                    <div class="other-offer-container">
+                        <div class="other-offer-img">
+
+                        </div>
+                        <div class="other-offer-content">
+
+                        </div>    
+                    </div>
+                    <div class="other-offer-container">
+                        <div class="other-offer-img">
+
+                        </div>
+                        <div class="other-offer-content">
+
+                        </div>    
+                    </div>
+                    <div class="other-offer-container">
+                        <div class="other-offer-img">
+
+                        </div>
+                        <div class="other-offer-content">
+
+                        </div>    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer id="footer">
+        
+    </footer>
+
+
+</body>
+<script>
+
+const urlParaeter = new URLSearchParams(window.location.search);
+let search=urlParaeter.get("search");
+console.log(search);
+if(search || search===""){
+    fetch("/resources/js/destinatii.json").then(response=>response.json()).then(response=>{
+        let list=[];
+        for(i=0;i<response.length;i++){
+            if(response[i].nume.toLowerCase().includes(search.toLowerCase())){
+                list.push(response[i]);
+            }
+        }
+        document.getElementById("search-engine-input").value = search;
+
+        if(list.length!=0){
+            for(i=0;i<list.length;i++){
+                document.getElementById("other-offers-list").innerHTML+='<div class="other-offer-container"><div class="other-offer-img" style="background-image:url(\'\/resources\/img\/'+list[i].img+'\')"></div><div class="other-offer-content"><h3>'+list[i].nume+'</h3> <p>'+list[i].descriere+'</p> <div> <span>'+list[i].pret+' RON</span> <a href="/destinatii/destinatie/?id='+list[i].id+'">Află mai multe</a> </div></div></div>';
+            }
+        }
+        else{
+            document.getElementById("other-offers-list").innerHTML="<h3>Nu există această locație...</h3>"
+        }
+        
+    }); 
+}
+else{
+    fetch("/resources/js/destinatii.json").then(response=>response.json()).then(response=>{
+    
+        for(i=0;i<response.length;i++){
+            document.getElementById("other-offers-list").innerHTML+='<div class="other-offer-container"><div class="other-offer-img" style="background-image:url(\'\/resources\/img\/'+response[i].img+'\')"></div><div class="other-offer-content"><h3>'+response[i].nume+'</h3> <p>'+response[i].descriere+'</p> <div> <span>'+response[i].pret+' RON</span> <a href="/destinatii/destinatie/?id='+response[i].id+'">Află mai multe</a> </div></div></div>';
+        }
+    
+    })
+}
+
+const searchEngineForm = document.getElementById("search-engine-form");
+
+searchEngineForm.addEventListener("submit",e=>{
+ e.preventDefault();
+
+    let searchInput = document.getElementById("search-engine-input").value;
+
+    window.location.href = "/destinatii/?search="+searchInput;
+});
+</script>
+<script src="/resources/js/menu.js"></script>
+<!-- <script src="/resources/js/scroll.js"></script> -->
+
+
+</html>

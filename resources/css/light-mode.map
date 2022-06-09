@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "light-mode.css",
+	"sources": [
+		"../scss/light-mode.scss"
+	],
+	"sourcesContent": [
+		"$blue: #30C5FF;\r\n$black: #1a1a1a;\r\n$white: #fafafa;\r\n\r\n\r\nbody.light-mode{\r\n    background-color: $white;\r\n    color:$black;\r\n}\r\n\r\n.light-mode a{\r\n    color:$black;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,IAAI,AAAA,WAAW,CAAA;EACX,gBAAgB,EAJZ,OAAO;EAKX,KAAK,EAND,OAAO;CAOd;;;AAED,AAAA,WAAW,CAAC,CAAC,CAAA;EACT,KAAK,EAVD,OAAO;CAWd"
+}
